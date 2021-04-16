@@ -3,20 +3,18 @@
     margin: 0px
 }
 
-.content{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    padding:70px;
+body{
+     padding: 35px;
     background-color: #dde1e7;
 }
+
 .neumorphism{
-    height: 550px;
-    width: 300px;
+    height: 650px;
+    width: 470px;
     border-radius: 40px;
     background-color: #dde1e7;
-    box-shadow: 13px 13px 20px #ffffff73, 
-                -13px -13px 20px rgba(94, 104, 121, .288);
+    box-shadow: -3px -3px 7px #ffffff73, 
+                3px 3px 5px rgba(94, 104, 121, .288);
     
 }
 .head{
@@ -47,29 +45,58 @@
 .username h6{
     font-size: 10px;
 }
-.form-control:focus{
-    border-color:#CCC;
+ .form-group .form-control:focus,
+.was-validated .custom-select:invalid,
+.form-control-file{
+    border-color:#CCC !important;
     outline:0;
-    -webkit-box-shadow:none;
-    box-shadow:none;
-     background: none;
+    background-color: inherit;
     font-size: 18px;
     color: #555;
+    background: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) right .75rem center/8px 10px no-repeat,none 
+                url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e) center right 1.75rem/calc(.75em + .375rem) calc(.75em + .375rem) no-repeat  !important;
+
 }
-/* .form-control{
-    -webkit-appearance: none;
-    border: none;
-    /* outline: 0px;
-    outline: none !important; 
-    background: none;
-    font-size: 18px;
-    color: #555;
-    /* padding: 20px 10px 20px 5px; *
-} */
-.username-input, .password-input, .select-input{
+
+.neumorp :hover{
     margin-bottom: 2px;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: inset 8px 8px 8px #ffffff73,
                 inset -8px -8px 8px rgba(94, 104, 121, .288) ;
     background: none;
+}
+.neumorp{
+    margin-bottom: 2px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px #ffffff73,
+                 -8px -8px 8px rgba(94, 104, 121, .288) ;
+    background: none;
+}
+.endBtn{
+    background-color: #047f20;
+    border: #CCC;
+    outline: 0px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 8px #ffffff73,
+                inset -8px -8px 8px rgba(94, 104, 121, .288) ;
+}
+.checkbox{
+    border-radius: 50px;
+    
+}
+ @media (max-width: 375px) {
+    .neumorphism{
+        height: 700px;
+    }
+}
+ @media (max-width: 320px) {
+     .neumorphism{
+        height: 715px;
+    }
+ }
+@media (max-width: 280px){
+     .neumorphism{
+        height: 741px;
+    }
 }

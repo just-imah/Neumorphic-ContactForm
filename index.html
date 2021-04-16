@@ -12,27 +12,61 @@
     <div class="content d-flex justify-content-center ">
         <div class="neumorphism">
             <div class="head">
-                 <div class="logo"></div>
+                <div class="logo"></div>
                 <div class="sub-title text-center mt-2">Lets know you more.</div>
             </div>
             
             <div class="data p-3">
                 <div class="username">
-                    <input type="email" class="username-input form-control" placeholder="Email Address">
+                    <input type="email" class=" form-control neumorp" placeholder="Email Address">
                     <h6 class="text-muted">we'll never share your email with anyone else</h6>
                 </div>
                 <div class="password">
-                    <input type="password" class="password-input form-control" placeholder="Password">
+                    <input type="password" class=" form-control neumorp" placeholder="Password">
                 </div>
-                 <div class="finder">
+                <div class="finder was-validated">
                     <h6 class="text-muted mt-2">How did you hear about us.</h6>
-                    <select class="form-control select-input" id="exampleFormControlSelect1">
+                    <select class="form-control custom-select neumorp" required id="exampleFormControlSelect1">
+                         <option value="">Open this select menu</option>
                         <option>Searched Online</option>
                         <option>Social Media</option>
                         <option>Referred by someone</option>
                         <option>Others</option>
                     </select>
+                    <!-- <div class="invalid-feedback"> invalid select feedback</div> -->
+                    <h6 class="text-muted mt-2">what type of event do you run.</h6>
+                    <select class="form-control custom-select neumorp" required id="exampleFormControlSelect1">
+                        <!-- <option class="text-muted">Select</option> -->
+                       <!-- <select class=" " > -->
+                        <option  value="">Open this select menu</option>
+                        <option>Music</option>
+                        <option>Fashion</option>
+                        <option>Comedy</option>
+                        <option>Others</option>
+                    </select>
+                    
                 </div>
+                <div class="uploads ">
+                    <h6 class="text-muted mt-2">Upload two clear fliers of your event.</h6>
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleFormControlFile1">Example file input</label> -->
+                            <input type="file" class="form-control-file neumorp" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleFormControlFile1">Example file input</label> -->
+                            <input type="file" class="form-control-file neumorp" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                    <input class="checkbox neumorph p-2" type="radio"  required> I agree with the policy of this company.
+                </div>
+                <div class="end d-flex justify-content-end mt-3 ">
+                    <button class="mr-2 p-2 endBtn" type="submit"> Add Event</button>
+                    <button class=" p-1 endBtn" type="submit"> Save</button>
+                </div>
+                
             </div>
             
         </div>
